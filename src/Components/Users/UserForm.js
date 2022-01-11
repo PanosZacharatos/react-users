@@ -22,7 +22,7 @@ function UserForm(props) {
         
         if(name.trim().length === 0 || age.trim().length === 0){
             //console.log('Empty field');
-            setError({headerTitle: "Empty Field" , contentTitle:"One field is empty"});
+            setError({headerTitle: "Empty Field" , contentTitle:"One or more fields are empty"});
             return;
         }
         if(age<=0){
