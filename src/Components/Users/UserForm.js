@@ -1,7 +1,7 @@
 import React , {useState} from 'react';
 import Card from '../UI/Card';
 import Button from '../UI/Button' ;
-import classes from './UserForm.css';
+import classes from './UserForm.module.css';
 import ErrorModal from '../UI/ErrorModal';
 
 function UserForm(props) {
@@ -48,7 +48,7 @@ function UserForm(props) {
     return (
         <div>
             {error && <ErrorModal error={error} handleError={handleError} />}
-            <Card className="user-form">
+            <Card className={classes.input}>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="name">Name</label>
                     <input id="name" type="text" value={name} onChange={handleNameChange} />

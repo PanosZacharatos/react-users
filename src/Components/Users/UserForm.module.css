@@ -1,17 +1,17 @@
-.user-form {
+.input {
   margin: 2rem auto;
   padding: 1rem;
   width: 90%;
   max-width: 40rem;
 }
 
-.user-form label {
+.input label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.user-form input {
+.input input {
   font: inherit;
   display: block;
   width: 100%;
@@ -20,7 +20,7 @@
   margin-bottom: 0.5rem;
 }
 
-.user-form input:focus {
+.input input:focus {
   outline: none;
   border-color: #4f005f;
 }
